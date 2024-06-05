@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SistemaMenus.Views.Master"
+             Title="Master"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Menu" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="30"/>
+
+                <Button Text="Inicio" Grid.Column="1" Grid.Row="1" x:Name="btnInicio" BackgroundColor="White"  Clicked="btnInicio_Clicked"/>
+                <Button Text="Imagenes" Grid.Column="1" Grid.Row="2" x:Name="btnImagenes" BackgroundColor="White" Clicked="btnImagenes_Clicked"/>
+
+
+                <ImageButton Grid.Column="0" Grid.Row="1" BackgroundColor="White" Source="IconInicio.png"/>
+                <ImageButton Grid.Column="0" Grid.Row="2" BackgroundColor="White" Source="IconImagenes.png"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
